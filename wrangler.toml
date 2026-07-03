@@ -1,12 +1,10 @@
-name = "tts" 
+name = "tts"
 main = "index.js"
 compatibility_date = "2024-01-15"
 compatibility_flags = ["nodejs_compat"]
 
-
 workers_dev = false
 route = { pattern = "tts.10091996.xyz", custom_domain = true }
-
 
 [env.production]
 name = "tts-voice-magic"
@@ -16,9 +14,6 @@ route = { pattern = "tts.10091996.xyz", custom_domain = true }
 [env.staging]
 name = "tts-voice-magic-staging"
 
-
+# 变量配置（如果需要的话）
 [vars]
-
-
-[triggers]
-crons = []
+# 可以在这里添加环境变量
